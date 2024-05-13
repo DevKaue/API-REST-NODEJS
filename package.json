@@ -1,0 +1,26 @@
+{
+  "name": "api-rest-nodejs",
+  "version": "1.0.0",
+  "description": "API COMPLETA com Node, TypeScript &amp; MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon --watch 'src/' --exec 'ts-node src/index.ts' -e ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevKaue/API-REST-NODEJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevKaue/API-REST-NODEJS/issues"
+  },
+  "homepage": "https://github.com/DevKaue/API-REST-NODEJS#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "typescript": "^5.4.5"
+  }
+}
