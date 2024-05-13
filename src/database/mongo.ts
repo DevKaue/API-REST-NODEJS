@@ -14,8 +14,8 @@ export const MongoClient = {
 
     const username = process.env.MONGODB_USERNAME;
     const password = process.env.MONGODB_PASSWORD;
-    const host = process.env.MONGODB_HOST || "localhost";
-    const port = process.env.MONGODB_PORT || "27017";
+    const host = process.env.MONGODB_HOST || "";
+    const port = process.env.MONGODB_PORT || "";
     const dbName = process.env.MONGODB_DB_NAME || "users-db";
 
     let url = `mongodb://${username}:${password}@${host}:${port}/${dbName}`;
