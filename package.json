@@ -4,7 +4,7 @@
   "description": "API COMPLETA com Node, TypeScript &amp; MongoDB",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon --watch 'src/' --exec 'ts-node src/index.ts' -e ts"
+    "start:dev": "nodemon --watch 'src/' --exec ts-node src/index.ts -e ts"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,15 @@
   },
   "homepage": "https://github.com/DevKaue/API-REST-NODEJS#readme",
   "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "eslint": "^9.2.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.2.0",
     "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
     "ts-node": "^10.9.2",
     "tsc": "^2.0.4",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.8.0"
   }
 }
