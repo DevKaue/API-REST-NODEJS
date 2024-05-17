@@ -8,7 +8,7 @@ API desenvolvida baseada neste vídeo no Youtube. Para acessá-lo [clique aqui](
   - TypeScript
   - Express
   - MongoDB
-Conceitos utilizados
+## Conceitos utilizados
   - SOLID
   - Injeção de Dependência (Dependency Injection)
   - Repository Pattern
