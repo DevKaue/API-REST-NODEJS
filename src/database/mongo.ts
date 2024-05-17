@@ -22,6 +22,9 @@ export const MongoClient = {
     // let url = `mongodb+srv://${username}:${password}@${host}:${port}/${dbName}`;
     let url = `mongodb+srv://${username}:${password}@${cluster}/${dbName}`;
 
+    //url com docker
+    //let url =
+
     // Se não há nome de usuário e senha
     if (!username || !password) {
       url = `mongodb+srv://${host}:${port}/${dbName}`;
