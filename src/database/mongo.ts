@@ -30,7 +30,7 @@ export const MongoClient = {
     const url = process.env.MONGODB_URL || "localhost:27017";
 
     // //Com o MongoDB
-    // const client = new Mongo(url);
+    //const client = new Mongo(url);
 
     //Com Docker
     const client = new Mongo(url, { auth: { username, password } });
