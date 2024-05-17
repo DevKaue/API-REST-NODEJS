@@ -5,6 +5,7 @@ import {
 import { MongoClient } from "../../database/mongo";
 import { User } from "../../models/users";
 import { ObjectId } from "mongodb";
+import { MongoUser } from "../mongo-protocols";
 
 export class MongoUpdateUserRepository implements IUpdateRepository {
   async updateUser(id: string, params: UpdateUserParams): Promise<User> {
@@ -19,7 +20,7 @@ export class MongoUpdateUserRepository implements IUpdateRepository {
     );
 
     const user = await MongoClient.db
-      .collection<Omit<User, "id">>("users-db")
+      .collection<MongoUser>("users-db")
       .findOne({ _id: new ObjectId(id) });
 
     if (!user) {
